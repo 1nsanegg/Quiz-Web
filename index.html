@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tuan Nguyen">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <!--  -->
+</head>
+
+<body>
+  <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+
+  <header>
+    <!--  -->
+    <div id="course-name">WPR</div>
+    <div class="stack-circle">
+      <p>M</p>
+      <p>E</p>
+      <p>R</p>
+      <p>M</p>
+    </div>
+  </header>
+
+  <article>
+
+    <section id="quiz-name">
+      <h1 class="banner-text">HTML Quiz</h1>
+    </section>
+
+    <section id="introduction">
+      <!--  -->
+      <div>
+        <p id="author">By Tuan Nguyen</p>
+        <h2>The Test</h2>
+        <p>The test contains 10 questions and there is no time limit.</p>
+        <p>The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.
+        <h2>Count Your Score</h2>
+        <p>You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed.
+          Maximum score is 10 points.
+        </p>
+      </div>
+      <div id="box-start">
+        <h2 c>Start the quiz</h2>
+        <p>Good luck!</p>
+        <button id="btn-start">Start the HTML quiz ❯</button>
+      </div>
+    </section>
+
+    <section id="attempt-quiz">
+      <!--  -->
+      <div>
+        <h2 class="question-index">Question 1 of 10</h2>
+      </div>
+      <div class="question-text">Question 1</div>
+      <form class="box">
+        <label class="option-selected">
+          <input type="radio" name="options" value="option-1" checked>
+          <p class="text">option1</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="options" value="option-2">
+          <p class="text">option2</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="options" value="option-3">
+          <p class="text">option3</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="options" value="option-4">
+          <p class="text">option4</p>
+        </label>
+      </form>
+      <div id="box-submit">
+        <button id="btn-submit">Submit your answer</button>
+      </div>
+    </section>
+
+    <section id="review-quiz">
+      <!--  -->
+      <div>
+        <h2 class="question-index">Question 1 of 10</h2>
+      </div>
+      <div class="question-text">Question 1</div>
+      <form class="box">
+        <label class="correct-answer">
+          <input type="radio" name="answers" value="option-1" checked>
+          <p class="text">option 1</p>
+          <label class="confirm-answer">correct-answer</label>
+        </label>
+        <label class="option">
+          <input type="radio" name="answers" value="option-2" disabled>
+          <p class="text">option 2</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="answers" value="option-3" disabled>
+          <p class="text">option 3</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="answers" value="option-4" disabled>
+          <p class="text">option 4</p>
+        </label>
+      </form>
+
+      <div>
+        <h2 class="question-index">Question 1 of 10</h2>
+      </div>
+      <div class="question-text">Question 1</div>
+      <form class="box">
+        <label class="option-correct">
+          <input type="radio" name="answers" value="option-1" disabled>
+          <p class="text">option 1</p>
+          <label class="confirm-answer">Correct answer</label>
+        </label>
+        <label class="wrong-answer">
+          <input type="radio" name="answers" value="option-2" checked>
+          <p class="text">option 2</p>
+          <label class="confirm-answer">Your answer</label>
+        </label>
+        <label class="option">
+          <input type="radio" name="answers" value="option-3" disabled>
+          <p class="text">option 3</p>
+        </label>
+        <label class="option">
+          <input type="radio" name="answers" value="option-4" disabled>
+          <p class="text">option 4</p>
+        </label>
+      </form>
+      <div id="box-result">
+        <h1>Result:</h1>
+        <h2>1/10</h2>
+        <h3>10%</h3>
+        <p>Practice more to improve it :D</p>
+        <button id="btn-try-again">Try again</button>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>
