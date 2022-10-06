@@ -253,5 +253,14 @@ input[name="answers"] {
         display: none;
     }
 }
-
-
+.score {
+    font-size: 24px;
+}
+.result {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px;
+}
+.hidden {
+    display: none;
+}

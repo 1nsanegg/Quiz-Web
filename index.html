@@ -10,8 +10,9 @@
   <title>HTML Quiz</title>
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700Proxima+Nova" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <!--  -->
 </head>
 
@@ -38,7 +39,7 @@
       <p>M</p>
       <p>E</p>
       <p>R</p>
-      <p>M</p>
+      <p>N</p>
     </div>
   </header>
 
@@ -74,8 +75,8 @@
       </div>
       <div class="question-text">Question 1</div>
       <form class="box">
-        <label class="option-selected">
-          <input type="radio" name="options" value="option-1" checked>
+        <label class="option">
+          <input type="radio" name="options" value="option-1" >
           <p class="text">option1</p>
         </label>
         <label class="option">
@@ -106,7 +107,7 @@
         <label class="correct-answer">
           <input type="radio" name="answers" value="option-1" checked>
           <p class="text">option 1</p>
-          <label class="confirm-answer">correct-answer</label>
+          <label class="confirm-answer">Correct answer</label>
         </label>
         <label class="option">
           <input type="radio" name="answers" value="option-2" disabled>
@@ -147,9 +148,9 @@
         </label>
       </form>
       <div id="box-result">
-        <h1>Result:</h1>
-        <h2>1/10</h2>
-        <h3>10%</h3>
+        <p class="result">Result:</p>
+        <p class="score">1/10</p>
+        <p><strong>10%</strong></p>
         <p>Practice more to improve it :D</p>
         <button id="btn-try-again">Try again</button>
       </div>
