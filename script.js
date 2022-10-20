@@ -1,5 +1,7 @@
 // TODO(you): Write the JavaScript necessary to complete the assignment.
 
+
+
 // select 3 screen
 const introduction = document.querySelector("#introduction");
 const attempt_quiz = document.querySelector("#attempt-quiz");
@@ -20,14 +22,24 @@ function startQuiz() {
     introduction.classList.add("hidden");
     attempt_quiz.classList.remove("hidden");
     topPage.scrollIntoView({block: "start"});
+    fetch('https://wpr-quiz-api.herokuapp.com/attempts', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+        }
+    }).then
 }
 btn_start.addEventListener("click", startQuiz);
 
 // click submit
 function submitAnswer() {
+    if(confirm("Are you sure about that???")) {
     attempt_quiz.classList.add("hidden");
     review_quiz.classList.remove("hidden");
     topPage.scrollIntoView({block: "start"});
+    }
+    
+    
 }
 btn_submit.addEventListener("click", submitAnswer);
 
@@ -54,4 +66,6 @@ const options = document.querySelectorAll(".option");
 for (let option of options) {
     option.addEventListener("click", select);
 }
+
+// populate question
 
