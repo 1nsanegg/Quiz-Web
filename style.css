@@ -126,7 +126,7 @@ header {
     display: flex;
     text-align: center;
     border: 1px white;
-    background-color: #ddd;
+    background-color: #ddd !important;
     margin-bottom: 1px;
 }
 
